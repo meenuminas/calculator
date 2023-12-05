@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Calculator</title> 
+<link rel="stylesheet" href="./calc.css">
+  
+     
+</head> 
+  
+<body > 
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./calc.css" />
+        <title>Calculator</title>
+      </head>
+      <body>
+        <div class="container m-0 ">
+          <div class="calculator ">
+            <input type="text" id="result" />
+            <div>
+              <button class="button operator" onclick="Allclear()">AC</button>
+              <button class="button operator" onclick="backspace()">DEL</button>
+              <button class="button operator"onclick="displayData('%')"  >%</button>
+              <button class="button operator"onclick="displayData('/')"  >/</button>
+            </div>
+            <div>
+              <button onclick="displayData(7)"  class="button" >7</button>
+              <button class="button"onclick="displayData(8)"  >8</button>
+              <button class="button"onclick="displayData(9)"  >9</button>
+              <button class="button operator"onclick="displayData('*')"  >*</button>
+            </div>
+            <div>
+              <button class="button"onclick="displayData(4)"  >4</button>
+              <button class="button"onclick="displayData(5)"  >5</button>
+              <button class="button"onclick="displayData(6)"  >6</button>
+              <button class="button operator"onclick="displayData('-')"  >-</button>
+            </div>
+            <div>
+              <button class="button"onclick="displayData(1)"  >1</button>
+              <button class="button"onclick="displayData(2)" >2</button>
+              <button class="button"onclick="displayData(3)" >3</button>
+              <button class="button operator"onclick="displayData('+')"  >+</button>
+            </div>
+    
+            <div>
+              <button class="button" onclick="displayData('00')" >00</button>
+              <button class="button"onclick="displayData(0)" >0</button>
+              <button class="button" onclick="displayData('.')" >.</button>
+              <button class="button equalBtn" onclick="out()">=</button>
+            </div>
+          </div>
+        </div>
+    
+        <script src="./calc.js"></script>
+      </body>
+    </html>
